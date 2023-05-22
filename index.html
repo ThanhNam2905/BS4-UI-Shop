@@ -11,20 +11,21 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 
     <!-- Link custom style css -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <!-- Link Default skins-color css -->
-    <link rel="stylesheet" href="./css/skins/crimson.css">
+    <link rel="stylesheet" href="/css/skins/crimson.css">
 </head>
 <body>
     
     <div class="root">
         <div class="root__wrapper">
-            <header class="header">
+            <header class="header fixed-top border-bottom">
                 <div class="container">
-                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                        <a href="index.html" class="navbar-brand">
-                            Navbar
+                    <nav class="navbar navbar-expand-md navbar-light p-0 py-3">
+                        <a href="index.html" class="navbar-brand text-white text-uppercase d-flex align-items-center">
+                            <span class="logo-circle"></span>
+                            <h1 class="font-weight-bold mb-0">Owen K</h1>
                         </a>
                         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#collapseNavbarMenu">
                             <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
                         <div id="collapseNavbarMenu" class="collapse navbar-collapse">
                             <ul class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a href="#" class="nav-link">Home</a>
+                                    <a href="#" class="nav-link active">Home</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="#" class="nav-link">About</a>
@@ -58,7 +59,33 @@
                 </div>
             </header>  <!-- End Header -->
             <main>
-
+                <section id="home" class="home-section">
+                    <div class="shapes">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="container h-100">
+                        <div class="row h-100">
+                            <div class="col-lg-6 p-0 pr-3">
+                                <div class="home__content text-left text-white">
+                                    <h1 class="text-capitalize">Present your awesome product</h1>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <a href="#" class="btn btn--primary">Buy For $150</a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 p-0 pl-3">
+                                <div class="home__img">
+                                    <img src="./images/watch-01.png" alt="watch-01.png" class="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </main>  <!-- End Main -->
             <footer>
 

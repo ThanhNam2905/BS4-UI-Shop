@@ -1,0 +1,12 @@
+
+:root {
+    --bg-color-crimson: #d70d25;
+}
+
+.header, .home-section {
+    background-color: var(--bg-color-crimson);
+}
+.btn--primary,
+.btn--primary:hover {
+    color: var(--bg-color-crimson);
+}
