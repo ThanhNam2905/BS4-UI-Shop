@@ -1,6 +1,6 @@
 
 :root {
-    --black-color: #222222;
+    --black-color: #2d3436;
 }
 
 .header, 
@@ -54,7 +54,9 @@
 .contact__wrapper .form__contact .row .form-control:focus {
     border-color: var(--black-color);
 }
-
+#preloader .icon-loader {
+    border-right: 5px solid var(--black-color) !important;
+}
 
 @media (max-width: 992px) {
 

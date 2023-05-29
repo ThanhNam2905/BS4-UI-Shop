@@ -1,6 +1,6 @@
 
 :root {
-    --blue-color: #4948d4;
+    --emerald-color: #2ecc71;
 }
 
 .header, 
@@ -16,7 +16,7 @@
 .newsletter-section::before,
 .contact__wrapper .form__contact .btn--send,
 .footer {
-    background-color: var(--blue-color);
+    background-color: var(--emerald-color);
     transition: all 0.4s linear;
 }
 
@@ -44,7 +44,7 @@
 .testimonials__content .owl-carousel .owl-nav button.owl-prev span,
 .faq-section .faq__question a,
 .follow-us .follow-item:hover i {
-    color: var(--blue-color);
+    color: var(--emerald-color);
     transition: all 0.4s linear;
 }
 
@@ -52,22 +52,22 @@
 .products__list .owl-carousel .owl-nav button.owl-prev:hover, 
 .testimonials__item .testi__info img,
 .contact__wrapper .form__contact .row .form-control:focus {
-    border-color: var(--blue-color);
+    border-color: var(--emerald-color);
 }
 #preloader .icon-loader {
-    border-right: 5px solid var(--blue-color) !important;
+    border-right: 5px solid var(--emerald-color) !important;
 }
 
 @media (max-width: 992px) {
 
     .header .navbar-nav .nav-item .nav-link {
-        color: var(--blue-color);
+        color: var(--emerald-color);
     }
 
     .header .navbar .navbar-collapse .nav-link::before,
     .header .navbar .navbar-toggler .navbar-toggler-icon,
     .header .navbar .navbar-toggler .navbar-toggler-icon::before,
     .header .navbar .navbar-toggler .navbar-toggler-icon::after {
-        background-color: var(--blue-color);
+        background-color: var(--emerald-color);
     }
 }

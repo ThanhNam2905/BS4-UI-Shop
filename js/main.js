@@ -1,6 +1,14 @@
 
 // ---------------- jQuery ----------------------
+$(window).on('load', function() {
+    setTimeout(function() {
+        $("#preloader").fadeOut('slow')
+    }, 1500);
+})
+
+
 $(document).ready(function () {
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -57,9 +65,6 @@ $(document).ready(function () {
         // $('.navbar-collapse').collapse("hide");
     });
 })
-
-
-
 
 // ---------------- Javascript ----------------------
 const navLinks = document.querySelectorAll('.header #collapseNavbarMenu .navbar-nav .nav-item .nav-link');

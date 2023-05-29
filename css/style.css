@@ -96,6 +96,35 @@ a {
     z-index: -1;
 }
 
+/* ----------------------- Pre-loader page CSS ----------------------- */
+#preloader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: #444444;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#preloader .icon-loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+
+    animation: preloader 1s linear infinite;
+}
+@keyframes preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 /* ----------------------- Header section CSS ----------------------- */
 .header {
