@@ -1,0 +1,71 @@
+
+:root {
+    --indigo-color: #6400ae;
+}
+
+.header, 
+.home-section,
+.heading-title__5::before,
+.features-section .features__item .card:hover,
+.products__list .owl-carousel .owl-nav button.owl-next,
+.products__list .owl-carousel .owl-nav button.owl-prev,
+.testimonials-section::before,
+.form-newsletter button.btn--subscribe,
+.testimonials__content .owl-carousel .owl-nav button.owl-next:hover ,
+.testimonials__content .owl-carousel .owl-nav button.owl-prev:hover ,
+.newsletter-section::before,
+.contact__wrapper .form__contact .btn--send,
+.footer {
+    background-color: var(--indigo-color);
+    transition: all 0.4s linear;
+}
+
+
+.btn--primary,
+.btn--primary:hover,
+.btn--subscribe,
+.btn--subscribe:hover,
+.btn--send,
+.btn--send:hover,
+.heading-title__5,
+.text--primary,
+.features-section .card .card-body i,
+.products__list .products__item .card-body .product__price span:first-child,
+.products__list .owl-carousel .owl-nav button.owl-next:hover span,
+.products__list .owl-carousel .owl-nav button.owl-prev:hover span,
+.contact-section .contact__content .address i,
+.contact-section .contact__content .address div h6,
+.contact-section .contact__content .email i,
+.contact-section .contact__content .email div h6,
+.contact-section .contact__content .phone i,
+.contact-section .contact__content .phone div h6,
+.testimonials__item .testi__info div h6,
+.testimonials__content .owl-carousel .owl-nav button.owl-next span,
+.testimonials__content .owl-carousel .owl-nav button.owl-prev span,
+.faq-section .faq__question a,
+.follow-us .follow-item:hover i {
+    color: var(--indigo-color);
+    transition: all 0.4s linear;
+}
+
+.products__list .owl-carousel .owl-nav button.owl-next:hover,
+.products__list .owl-carousel .owl-nav button.owl-prev:hover, 
+.testimonials__item .testi__info img,
+.contact__wrapper .form__contact .row .form-control:focus {
+    border-color: var(--indigo-color);
+}
+
+
+@media (max-width: 992px) {
+
+    .header .navbar-nav .nav-item .nav-link {
+        color: var(--indigo-color);
+    }
+
+    .header .navbar .navbar-collapse .nav-link::before,
+    .header .navbar .navbar-toggler .navbar-toggler-icon,
+    .header .navbar .navbar-toggler .navbar-toggler-icon::before,
+    .header .navbar .navbar-toggler .navbar-toggler-icon::after {
+        background-color: var(--indigo-color);
+    }
+}

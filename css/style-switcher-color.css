@@ -1,0 +1,30 @@
+
+.style-switcher-color {
+    position: fixed;
+    top: 100px;
+    right: 10px;
+    z-index: 999;
+    padding: 15px;
+    border: 2px solid #d4d4e3;
+    border-right: none;
+    background-color: #fff;
+    border-radius: 7px;
+    width: 150px;
+}
+.style-switcher-color h5 {
+    font-size: 16px;
+    border-bottom: 2px solid #d4d4e3;
+    line-height: 28px;
+    padding-bottom: 3px;
+}
+.style-switcher-color ul li {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.style-switcher-color ul li:last-child {
+    margin-right: 0px;
+}

@@ -21,6 +21,7 @@ html, body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 a {
@@ -36,7 +37,9 @@ a {
     border: none;
     cursor: pointer;
 }
-.btn--primary {
+.btn--primary,
+.btn--subscribe,
+.form__contact .btn--send {
     background-color: var(--white-color);
     padding: 0.7rem 1.5rem;
     border-radius: 25px;
@@ -46,10 +49,14 @@ a {
     z-index: 1;
     transition: all 0.4s linear;
 }
-.btn--primary:focus {
+.btn--primary:focus,
+.btn--subscribe:focus,
+.form__contact .btn--send:focus {
     box-shadow: none;
 }
-.btn--primary::before {
+.btn--primary::before,
+.btn--subscribe::before,
+.form__contact .btn--send::before {
     position: absolute;
     content: "";
     top: 0;
@@ -60,7 +67,9 @@ a {
     background-color: rgba(0, 0, 0, 0.2);
     transition: all 0.3s linear;
 }
-.btn--primary:hover::before {
+.btn--primary:hover::before,
+.btn--subscribe:hover::before,
+.form__contact .btn--send:hover::before {
     width: 100%;
     transition: all 0.3s linear;
 }
@@ -147,6 +156,7 @@ a {
 }
 .header .navbar .navbar-collapse .nav-link.active {
     opacity: 1;
+    font-weight: 800;
 }
 .header .navbar .navbar-collapse .nav-link.active::before {
     opacity: 1;
@@ -155,8 +165,7 @@ a {
 
 /* ----------------------- Home section CSS ----------------------- */
 .home-section {
-    height: 100vh;
-    padding-top: 78px;
+    padding: 260px 0 210px;
     position: relative;
     z-index: 1;
 }
@@ -173,9 +182,6 @@ a {
     z-index: -1;
     height: 110px;
 }
-.home__content {
-    padding-top: 35%;
-}
 .home__content h1 {
     font-size: 50px;
     font-weight: 800;
@@ -188,10 +194,10 @@ a {
 }
 .home__img img {
     position: absolute;
-    top: 15%;
-    right: 0;
+    top: -50px;
+    left: 170px;
     width: 100%;
-    max-width: 420px;
+    max-width: 390px;
     
     animation: productImg 3s linear infinite;
 }
@@ -279,7 +285,7 @@ a {
 
 /* ----------------------- About section CSS ----------------------- */
 .about-section {
-    padding: 70px 0px;
+    padding: 50px 0px;
 }
 .about__img img {
     max-width: 400px;
@@ -311,7 +317,7 @@ a {
 /* ----------------------- Features section CSS ----------------------- */
 .features-section {
     background-color: #f5f5ff;
-    padding: 60px 0;
+    padding: 50px 0;
 }
 .features-section .features__title .sub-title {
     line-height: 46px;
@@ -340,7 +346,7 @@ a {
 
 /* ----------------------- Products section CSS ----------------------- */
 .products-section {
-    padding: 60px 0;
+    padding: 50px 0;
 }
 .products__list .products__item {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -404,11 +410,16 @@ a {
     color: var(--white-color);
     margin: 0 10px;
     font-weight: 300;
+    border: 2px solid transparent;
+}
+.products__list .owl-carousel .owl-nav button.owl-next:hover,
+.products__list .owl-carousel .owl-nav button.owl-prev:hover {
+    background-color: var(--white-color);
 }
 .products__list .owl-carousel .owl-nav button.owl-next span ,
 .products__list .owl-carousel .owl-nav button.owl-prev span {
     font-size: 42px;
-    margin-top: -11px;
+    margin-top: -12px;
     display: block;
 }
 
@@ -418,7 +429,7 @@ a {
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
-    padding: 80px 0;
+    padding: 70px 0;
     position: relative;
     z-index: 1;
 }
@@ -435,8 +446,78 @@ a {
 .testimonials__title h5::before {
     background-color: var(--white-color);
 }
+.testimonials__item .testi__info img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border: 2px solid transparent;
+}
+.testimonials__item .testi__info div h6 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.testimonials__item .testi__comment p {
+    font-size: 18px;
+    color: #999;
+    line-height: 28px;
+    height: 88px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.testimonials__item .testi__comment p i.fa-quote-right {
+    bottom: 10%;
+    right: 0;
+}
+.testimonials__item .testi__rating {
+    font-size: 16px;
+    color: orange;
+}
+.testimonials__content .owl-carousel .owl-nav {
+    text-align: center;
+    margin-top: 35px;
+}
+.testimonials__content .owl-carousel .owl-nav button.owl-next,
+.testimonials__content .owl-carousel .owl-nav button.owl-prev {
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: var(--white-color);
+    margin: 0 10px;
+    font-weight: 300;
+    transition:  all 0.4s linear;
+    border: 2px solid transparent;
+}
+.testimonials__content .owl-carousel .owl-nav button.owl-next:hover,
+.testimonials__content .owl-carousel .owl-nav button.owl-prev:hover {
+    border-color: var(--white-color);
+    transition:  all 0.4s linear;
+}
+.testimonials__content .owl-carousel .owl-nav button.owl-next span,
+.testimonials__content .owl-carousel .owl-nav button.owl-prev span {
+    font-size: 42px;
+    margin-top: -12px;
+    display: block;
+}
+.testimonials__content .owl-carousel .owl-nav button.owl-next:hover span,
+.testimonials__content .owl-carousel .owl-nav button.owl-prev:hover span {
+    color: var(--white-color);
+}
 
-
+/* ----------------------- FAQ section CSS ----------------------- */
+.faq-section {
+    padding: 60px 0;
+}
+.faq__content .col-lg-6 .faq__title {
+    cursor: pointer;
+    line-height: 30px;
+}
+.faq__content .col-lg-6 .faq__title i {
+    font-size: 15px;
+}
 
 /* ----------------------- Newsletter section CSS ----------------------- */
 .newsletter-section {
@@ -460,26 +541,34 @@ a {
 .newsletter__title h5::before {
     background-color: var(--white-color);
 }
+.form-subscribe input[type='email'] {
+    padding: 20px 185px 20px 30px;
+}
 .form-newsletter button.btn--subscribe {
     top: 50%;
     right: 1%;
     height: 80%;
     padding: 0 1.5rem;
     transform: translateY(-50%);
-    background-color: var(--primary-color);
 }
 
 /* ----------------------- Contact section CSS ----------------------- */
 .contact-section {
-    padding: 70px;
+    padding: 60px 0px;
 }
 .contact__wrapper .form__contact .row .form-control {
     border: none;
     border-bottom: 3px solid #dcdcdc;
     padding: 20px 12px;
 }
+.contact__wrapper .form__contact .row .form-control:focus {
+    box-shadow: none;
+}
 .contact__wrapper .form__contact .row .form-control::placeholder {
     color: #9e9e9e;
+}
+.contact__wrapper .form__contact .row .col-12 textarea {
+    height: 160px;
 }
 .contact__wrapper .form__contact .btn--send {
     color: var(--white-color);
@@ -510,7 +599,7 @@ a {
 
 /* ----------------------- Footer section CSS ----------------------- */
 .footer {
-    padding: 70px 0 15px;
+    padding: 60px 0 15px;
 }
 .footer .container a span.logo-circle {
     position: relative;
@@ -540,7 +629,11 @@ a {
     height: 48px;
     border-radius: 50%;
     border: 2px solid var(--white-color);
+    transition: all 0.4s linear;
 }
 .follow-us .follow-item i {
     font-size: 20px;
+}
+.follow-us .follow-item:hover {
+    background-color: var(--white-color);
 }
