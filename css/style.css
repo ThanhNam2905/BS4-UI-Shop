@@ -204,7 +204,7 @@ a {
     bottom: 0;
     left: 0;
     right: 0;
-    background: url(../images/shape-bg.png);
+    background: url(./images/shape-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -454,7 +454,7 @@ a {
 
 /* ----------------------- Testimonials section CSS ----------------------- */
 .testimonials-section {
-    background: url(/images/bg-01.jpg) no-repeat;
+    background: url(./images/bg-01.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -550,7 +550,7 @@ a {
 
 /* ----------------------- Newsletter section CSS ----------------------- */
 .newsletter-section {
-    background: url(/images/bg-02.jpg) no-repeat;
+    background: url(./images/bg-02.jpg) no-repeat;
     background-size: cover;
     background-position: center center;
     padding: 60px 0;

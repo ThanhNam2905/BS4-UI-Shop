@@ -61,8 +61,6 @@ $(document).ready(function () {
         $('html body').animate({
             scrollTop: $(sectionTo).offset().top
         }, 1500);
-
-        // $('.navbar-collapse').collapse("hide");
     });
 })
 
